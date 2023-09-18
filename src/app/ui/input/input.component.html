@@ -1,4 +1,10 @@
 <div>
+    <ng-container >
+        <ul>
+            <li *ngFor="let entry of MenuArray">{{entry.label}}</li>
+        </ul>
+
+    </ng-container>
     <label for="inputId">{{label}}</label>
     <input type="text" [value]="value" />
 </div>
