@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --output-hashing=none --configuration production",
-    "package":"cat docs/angular-tour-of-heroes/{runtime,polyfills,main}.js > docs/angular-tour-of-heroes/component-lib.js",
+    "package":"cat docs/{runtime,polyfills,main}.js > docs/component-lib.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
