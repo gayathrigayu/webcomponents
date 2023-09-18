@@ -2,7 +2,7 @@ import { Component , Input } from '@angular/core';
 
 type InputValue= string | number | undefined;
 type MenuArray= string | number | undefined;
-
+type InputArray = any[] | undefined;
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
@@ -11,23 +11,8 @@ type MenuArray= string | number | undefined;
 export class InputComponent {
 
   @Input() label= "";
+  @Input() dummytext= "";
   @Input() value : InputValue;
-  MenuArray =[
-    {
-    "label":"Company"
-    },
-    {
-      "label":"Products"
-      },
-      {
-        "label":"Rates"
-        },
-        {
-          "label":"Contact Us"
-          }
-]
-
- 
-
+  @Input() myarray : any[] = [];
 
 }
